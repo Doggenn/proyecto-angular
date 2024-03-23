@@ -1,0 +1,18 @@
+body{
+    background-color: gray;
+    padding: 100px;
+}
+.container{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
+}
+.row {
+    padding: 20px;
+}
+.title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}

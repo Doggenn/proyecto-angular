@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  seccionActual: string = 'home'
+  cambiarSeccion( opcion: string ) {
+    this.seccionActual = opcion;
+  }
   title = 'proyecto_angular';
 }

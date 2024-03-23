@@ -1,0 +1,94 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        .logo_header{
+            width: 30%;
+            height: 50%;
+            svg{
+                .cls-1 {
+                        fill: url(#Degradado_sin_nombre_2);
+                    }
+                
+                    .cls-2 {
+                        fill: #122246;
+                    }
+                
+                    .cls-3 {
+                        fill: #fff;
+                    }
+            }
+        }
+        .botones{
+            width: 100%;
+            height: 100px;
+            box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
+            ul{
+                width: 100%;
+                height: 100%;
+                list-style: none;
+                display: flex;
+                padding-left: 0px;
+                background-color: orange;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                li{
+                    padding: 0px 10px;
+                    width: 80px;
+                    align-items: center;
+                    &:hover{
+                        border: 1px solid grey;
+                        background-color: rgb(153, 99, 0);
+                        color: #00579F;
+                        box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
+                        svg{
+                            .cls-1{
+                                fill: #00579F;
+                            }
+                        }
+                    }
+                    &.active{
+                        border: 1px solid grey;
+                        background-color: rgb(153, 99, 0);
+                        color: #00579F;
+                        box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
+                    
+                        svg {
+                            .cls-1 {
+                                fill: #00579F;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    background-color: rgb(61, 61, 61);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            padding: 0px 20px;
+            color: white;
+            &:hover{
+                color: #00579F;
+            }
+        }
+    }
+}
