@@ -48,6 +48,7 @@ header{
                     align-items: center;
                     &:hover{
                         border: 1px solid grey;
+                        border-radius: 10px;
                         background-color: rgb(153, 99, 0);
                         color: #00579F;
                         box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
@@ -59,6 +60,7 @@ header{
                     }
                     &.active{
                         border: 1px solid grey;
+                        border-radius: 10px;
                         background-color: rgb(153, 99, 0);
                         color: #00579F;
                         box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);

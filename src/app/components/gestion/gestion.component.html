@@ -1,1 +1,52 @@
-<p>gestion works!</p>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>Creacion/edicion de productos</h2>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="form-label">Nombre</label>
+                    <input type="text" placeholder="Por ej: Pikachu enfadado." class="form-control" [(ngModel)]="nuevoProducto.name">
+                </div>
+                <div class="mb-3">
+                    <label for="form-label" >Precio</label>
+                    <input type="number" placeholder="Por ej: 300" min="0" class="form-control" [(ngModel)]="nuevoProducto.price">
+                </div>
+                <div class="mb-3">
+                    <label for="form-label">Descripcion</label>
+                    <textarea type="text" placeholder="Por ej: Un Pikachu de muy mala hostia mejor nos vérselas con el al no ser que quieras cargar la batería de tu teléfono que se cargan instantáneamente según te alcance su impactrueno." class="form-control" rows="3" [(ngModel)]="nuevoProducto.description"> </textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="form-label">Imagen</label>
+                    <textarea type="text" placeholder="Por ej: https://static.printler.com/cache/b/d/e/4/6/9/bde46975a186eb17f441a26b2a0b1cbfb1b0b129.jpg" rows="3" class="form-control" [(ngModel)]="nuevoProducto.image"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="form-label">Opiniones</label>
+                    <input type="number" max="5" min="0" class="form-control" [(ngModel)]="nuevoProducto.stars">
+                </div>
+                <button (click)="onClick()" class="btn btn-info">Enviar</button>
+            </div>
+            <div class="col-1">
+                <svg width="3" height="434" viewBox="0 0 3 434" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="2.5" y1="0.00129533" x2="1.37565" y2="434.001" stroke="#F89F21" />
+                </svg>
+
+            </div>
+            <div class="col-5">
+                <div class="productos">
+                    <h4>Preview del producto:</h4>
+                    <div class="" *ngFor="let prod of arrProductos">
+                        <img class="dibujo" [src]="prod.image" alt="{{prod.image}}">
+                        <h3>{{prod.name}}</h3>
+                        <p>Precio: {{prod.price}}€</p>
+                        <p>{{prod.description}}</p>
+                        <p><svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.00016 8.31066L9.42008 10.3359L8.51253 6.51887L11.534 3.95062L7.55518 3.61398L6.00016 0.0195312L4.44515 3.61398L0.466309 3.95062L3.48226 6.51887L2.58024 10.3359L6.00016 8.31066Z"
+                                fill="#FB8200" />
+                        </svg>{{prod.stars}}</p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+</body>

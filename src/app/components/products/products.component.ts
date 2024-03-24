@@ -1,5 +1,5 @@
 import { Producto } from 'src/app/interfaces/producto';
-import { Component, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { ProductosService } from 'src/app/service/productos.service';
 
 @Component({

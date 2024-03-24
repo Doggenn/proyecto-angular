@@ -6,3 +6,8 @@ export interface Producto {
     stars: number;
     image: string;
 }
+export interface ProductoGes {
+    nombre: string;
+    precio: number;
+    departamento: string;
+}
