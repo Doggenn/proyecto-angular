@@ -76,6 +76,13 @@
         </li>
       </ul>
     </div>
+    <div class="botones2">
+      <ul>
+        <li [ngClass]="{'active':seccionActual === 'login'}" (click)="cambiarSeccion('login')"  [routerLink]="['/login']">Login</li>
+        <li [ngClass]="{'active': seccionActual === 'login'}" (click)="cambiarSeccion('login')" (click)="onClickLogout()">Logout</li>
+        <li [ngClass]="{'active':seccionActual === 'registro'}" (click)="cambiarSeccion('registro')"  [routerLink]="['/registro']">Registro</li>
+      </ul>
+    </div>
   </nav>
 </header>
 

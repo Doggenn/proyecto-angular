@@ -4,6 +4,7 @@ header{
     justify-content: center;
     
     nav{
+        box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -31,7 +32,7 @@ header{
         .botones{
             width: 100%;
             height: 100px;
-            box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
+            // box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
             ul{
                 width: 100%;
                 height: 100%;
@@ -63,13 +64,57 @@ header{
                         border-radius: 10px;
                         background-color: rgb(153, 99, 0);
                         color: #00579F;
-                        box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
+                        // box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
                     
                         svg {
                             .cls-1 {
                                 fill: #00579F;
                             }
                         }
+                    }
+                }
+            }
+        }
+        .botones2 {
+            width: 100%;
+            height: 25px;
+            // box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
+            ul {
+                padding-right: 20px;
+                justify-content: flex-end;
+                width: 100%;
+                height: 100%;
+                list-style: none;
+                display: flex;
+                padding-left: 0px;
+                background-color: orange;
+                align-items: center;
+                text-align: center;
+                li {
+                    padding: 0px 10px;
+                    width: 80px;
+                    align-items: center;
+
+                    &:hover {
+                        border: 1px solid grey;
+                        border-radius: 10px;
+                        background-color: rgb(153, 99, 0);
+                        color: #00579F;
+                        box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
+
+                        svg {
+                            .cls-1 {
+                                fill: #00579F;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        border: 1px solid grey;
+                        border-radius: 10px;
+                        background-color: rgb(153, 99, 0);
+                        color: #00579F;
+                        // box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
                     }
                 }
             }

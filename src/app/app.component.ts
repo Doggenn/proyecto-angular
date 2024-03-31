@@ -7,14 +7,13 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  seccionActual: string = 'home'; // Valor por defecto
+  seccionActual: string = 'home'; 
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        // Actualizar la seccionActual según la ruta actual
         this.actualizarSeccionActual();
       }
     });
@@ -25,17 +24,25 @@ export class AppComponent {
   }
 
   private actualizarSeccionActual() {
-    // Obtener la ruta actual del router
     const rutaActual = this.router.url;
-
-    // Lógica para determinar la sección actual basada en la ruta actual del router
     if (rutaActual === '/productos') {
       this.seccionActual = 'productos';
     } else if (rutaActual === '/gestion') {
       this.seccionActual = 'gestion';
+    }else if (rutaActual === '/login') {
+      this.seccionActual = 'login';
+    } else if (rutaActual === '/registro') {
+    this.seccionActual = 'registro';
+    }else if (rutaActual === '/gestion/:productoId') {
+      this.seccionActual = 'gestion';
     } else {
       this.seccionActual = 'home';
     }
+  }
+  onClickLogout() {
+    localStorage.removeItem('token_crm');
+    alert('Hasta pronto!')
+    this.router.navigateByUrl('/login');
   }
   title = 'proyecto_angular';
 }

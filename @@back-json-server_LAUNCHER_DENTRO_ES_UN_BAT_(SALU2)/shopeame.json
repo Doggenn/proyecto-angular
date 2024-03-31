@@ -1,0 +1,232 @@
+{
+  "products": [
+    {
+      "name": "Zapatos Vintage",
+      "price": 49.99,
+      "description": "Bellos zapatos antiguos para Hipsters.",
+      "stars": 4.5,
+      "image": "https://i.ibb.co/4j85tBM/shoes.jpg",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Máquina de escribir",
+      "price": 109.99,
+      "description": "Bonita máquina de escribir antigua.",
+      "stars": 4.2,
+      "image": "https://i.ibb.co/84zfbz0/maquina.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Lapiceros de colores",
+      "price": 1.99,
+      "description": "Estupendos bolígrafos de colores.",
+      "stars": 1,
+      "image": "https://i.ibb.co/s5m7HKt/lapiceros.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Pantalón",
+      "price": 49.99,
+      "description": "Pantalón de moto para evitar heridas.",
+      "stars": 4,
+      "image": "https://i.ibb.co/6nnVkNY/pantalon.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Cuaderno de colores",
+      "price": 7.25,
+      "description": "Excelente cuaderno para que apuntes tus clases.",
+      "stars": 3.5,
+      "image": "https://i.ibb.co/Jr3FHVd/cuaderno.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Jarabe marca blanca",
+      "price": 12.5,
+      "description": "No cura el COVID, pero está muy rico.",
+      "stars": 1,
+      "image": "https://i.ibb.co/mhgHWnf/jarabe.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Maceta de diseño",
+      "price": 9.99,
+      "description": "Maceta de diseño a precio económico.",
+      "stars": 5,
+      "image": "https://i.ibb.co/MZSrV6q/maceta.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Gato Persa",
+      "price": 100,
+      "description": "No sé si es legal vender animales online...",
+      "stars": 3,
+      "image": "https://i.ibb.co/1zPPBjx/gato.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Zapatos Vintage",
+      "price": 49.99,
+      "description": "Bellos zapatos antiguos para Hipsters.",
+      "stars": 4.5,
+      "image": "https://i.ibb.co/4j85tBM/shoes.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Máquina de escribir",
+      "price": 109.99,
+      "description": "Bonita máquina de escribir antigua.",
+      "stars": 4.2,
+      "image": "https://i.ibb.co/84zfbz0/maquina.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Lapiceros de colores",
+      "price": 1.99,
+      "description": "Estupendos bolígrafos de colores.",
+      "stars": 1,
+      "image": "https://i.ibb.co/s5m7HKt/lapiceros.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Pantalón",
+      "price": 49.99,
+      "description": "Pantalón de moto para evitar heridas.",
+      "stars": 4,
+      "image": "https://i.ibb.co/6nnVkNY/pantalon.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Cuaderno de colores",
+      "price": 7.25,
+      "description": "Excelente cuaderno para que apuntes tus clases.",
+      "stars": 3.5,
+      "image": "https://i.ibb.co/Jr3FHVd/cuaderno.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Jarabe marca blanca",
+      "price": 12.5,
+      "description": "No cura el COVID, pero está muy rico.",
+      "stars": 1,
+      "image": "https://i.ibb.co/mhgHWnf/jarabe.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Maceta de diseño",
+      "price": 9.99,
+      "description": "Maceta de diseño a precio económico.",
+      "stars": 5,
+      "image": "https://i.ibb.co/MZSrV6q/maceta.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Gato Persa",
+      "price": 100,
+      "description": "No sé si es legal vender animales online...",
+      "stars": 3,
+      "image": "https://i.ibb.co/1zPPBjx/gato.jpg"
+    },
+    {
+      "name": "Pikachu Enfadado",
+      "price": 300,
+      "description": "Un Pikachu de muy mala hostia mejor nos vérselas con el al no ser que quieras cargar la batería de tu teléfono que se cargan instantáneamente según te alcance su impactrueno.asdasdasdasdad",
+      "stars": 5,
+      "image": "https://static.printler.com/cache/b/d/e/4/6/9/bde46975a186eb17f441a26b2a0b1cbfb1b0b129.jpg",
+      "id": "201a"
+    }
+  ],
+  "users": [
+    {
+      "id": "c667",
+      "username": "Habia_una_vez",
+      "email": "Un_barquito",
+      "password": "Chiquitito"
+    },
+    {
+      "id": "5346",
+      "email": "Un_barquito",
+      "password": "Chiquitito"
+    },
+    {
+      "id": "713a",
+      "email": "nolose",
+      "password": "nolose"
+    },
+    {
+      "id": "12cc",
+      "email": "nolose",
+      "password": "nolose"
+    },
+    {
+      "id": "9bb2",
+      "email": "nolose",
+      "password": "nolose"
+    },
+    {
+      "id": "2dd5",
+      "email": "nolose",
+      "password": "nolose"
+    },
+    {
+      "id": "80f2",
+      "email": "nolose",
+      "password": "nolose"
+    },
+    {
+      "id": "24d9",
+      "email": "nolose",
+      "password": "nolose"
+    }
+  ],
+  "login": [
+    {
+      "id": "ebd7",
+      "email": "nolose",
+      "password": "nolose"
+    },
+    {
+      "id": "ca8e",
+      "email": "nolose",
+      "password": "nolose"
+    },
+    {
+      "id": "3237",
+      "email": "nolosssssssssssss",
+      "password": "nolose"
+    }
+  ],
+  "registro": [
+    {
+      "id": "046f",
+      "username": "asda",
+      "email": "asdasd",
+      "password": "asdasda"
+    },
+    {
+      "id": "9a91",
+      "username": "nolose",
+      "email": "nolose",
+      "password": "nolose"
+    },
+    {
+      "id": "a77a",
+      "username": "adsasda",
+      "email": "asdadsa",
+      "password": "asdads"
+    },
+    {
+      "id": "a552",
+      "username": "sdadssa",
+      "email": "asdasd",
+      "password": "asdasdd"
+    },
+    {
+      "id": "0ff7",
+      "username": "asdasd",
+      "email": "asdas",
+      "password": "asdadasdasd"
+    }
+  ]
+}

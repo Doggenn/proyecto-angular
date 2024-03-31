@@ -1,28 +1,35 @@
 body {
     background-color: gray;
     padding: 100px;
+
     .container {
         background-color: white;
         border-radius: 20px;
         box-shadow: -3px 12px 30px 6px rgba(0, 0, 0, 0.3);
+
         .row {
             padding: 20px;
-            label{
+
+            label {
                 font-weight: bold;
             }
-            input{
+
+            input {
                 border: 1px solid black;
             }
-            textarea{
+
+            textarea {
                 border: 1px solid black;
             }
-            .btn{
+
+            .btn {
                 background-color: orange;
                 font-weight: bold;
                 border: 1px solid black;
+
                 &:hover {
-                        color: azure;
-                    }
+                    color: azure;
+                }
             }
         }
     }

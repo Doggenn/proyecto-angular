@@ -1,6 +1,6 @@
-import { Producto } from 'src/app/interfaces/producto';
+import { Producto } from 'src/app/components/interfaces/producto';
 import { Component, Input, inject } from '@angular/core';
-import { ProductosService } from 'src/app/service/productos.service';
+import { ProductosService } from 'src/app/core/service/productos.service';
 
 @Component({
   selector: 'app-products',
@@ -10,7 +10,6 @@ import { ProductosService } from 'src/app/service/productos.service';
 export class ProductsComponent {
   //@Input() productos: Producto[] = [];
   arrProductos:any;
-
   productosService = inject(ProductosService)
 
 

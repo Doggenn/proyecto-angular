@@ -1,36 +1,32 @@
 <body>
     <div class="container">
         <div class="row">
-            <h2>Creacion/edicion de productos</h2>
+            <h2>Edicion de productos</h2>
             <form [formGroup]="formulario" (ngSubmit)="onSubmit()" class="col-6">
                 <div class="mb-3">
                     <label for="form-label">Nombre</label>
-                    <input formControlName="name" type="text" placeholder="Por ej: Pikachu enfadado." class="form-control"
-                        (input)="updatePreview()">
+                    <input formControlName="name" type="text" class="form-control" (input)="updatePreview()">
                 </div>
                 <div class="mb-3">
                     <label for="form-label">Precio</label>
-                    <input type="number" placeholder="Por ej: 300" min="0" class="form-control" formControlName="price"
-                        (input)="updatePreview()">
+                    <input type="number" min="0" class="form-control" formControlName="price" (input)="updatePreview()">
                 </div>
                 <div class="mb-3">
                     <label for="form-label">Descripcion</label>
-                    <textarea type="text"
-                        placeholder="Por ej: Un Pikachu de muy mala hostia mejor nos vérselas con el al no ser que quieras cargar la batería de tu teléfono que se cargan instantáneamente según te alcance su impactrueno."
-                        class="form-control" rows="3" formControlName="description" (input)="updatePreview()"></textarea>
+                    <textarea type="text" class="form-control" rows="3" formControlName="description"
+                        (input)="updatePreview()"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="form-label">Imagen</label>
-                    <textarea type="text"
-                        placeholder="Por ej: https://static.printler.com/cache/b/d/e/4/6/9/bde46975a186eb17f441a26b2a0b1cbfb1b0b129.jpg"
-                        rows="3" class="form-control" formControlName="image" (input)="updatePreview()"></textarea>
+                    <textarea type="text" rows="3" class="form-control" formControlName="image"
+                        (input)="updatePreview()"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="form-label">Opiniones</label>
                     <input type="number" max="5" min="0" class="form-control" formControlName="stars"
                         (input)="updatePreview()">
                 </div>
-                <input [disabled]="!formulario.valid" type="submit" class="btn btn-info" value="Enviar">
+                <input [disabled]="!formulario.valid" type="submit" class="btn btn-info" value="Actualizar">
             </form>
             <div class="col-1">
                 <svg width="3" height="434" viewBox="0 0 3 434" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,19 +36,19 @@
             <div class="col-5">
                 <div class="productos">
                     <h4>Preview del producto:</h4>
-                    <div *ngIf="nuevoProducto">
-                        <img class="dibujo" [src]="nuevoProducto.image" alt="{{nuevoProducto.image}}">
-                        <h3>{{nuevoProducto.name}}</h3>
-                        <p>Precio: {{nuevoProducto.price}}€</p>
-                        <p>{{nuevoProducto.description}}</p>
+                    <div *ngIf="producto">
+                        <img class="dibujo" [src]="producto.image" alt="{{producto.image}}">
+                        <h3>{{ producto.name }}</h3>
+                        <p>Precio: {{producto.price}}€</p>
+                        <p>{{producto.description}}</p>
                         <p><svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M6.00016 8.31066L9.42008 10.3359L8.51253 6.51887L11.534 3.95062L7.55518 3.61398L6.00016 0.0195312L4.44515 3.61398L0.466309 3.95062L3.48226 6.51887L2.58024 10.3359L6.00016 8.31066Z"
                                     fill="#FB8200" />
-                            </svg>{{nuevoProducto.stars}}</p>
+                            </svg>{{producto.stars}}</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 </body>
